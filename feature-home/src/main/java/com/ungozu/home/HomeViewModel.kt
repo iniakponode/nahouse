@@ -1,10 +1,12 @@
 package com.ungozu.home
 
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.LiveData
-
-class HomeViewModel : ViewModel() {
-    private val _welcomeMessage = MutableLiveData("Welcome to NaHouse")
-    val welcomeMessage: LiveData<String> = _welcomeMessage
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import javax.inject.Inject
+@HiltViewModel
+class HomeViewModel @Inject constructor() : ViewModel() {
+    private val _welcomeMessage = MutableStateFlow("Welcome to NaHouse")
+    val welcomeMessage: StateFlow<String> = _welcomeMessage
 }
