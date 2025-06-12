@@ -1,0 +1,3 @@
+com.ungozu.home
+id welcomeText
+layout fragment_home
