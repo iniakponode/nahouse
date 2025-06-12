@@ -21,4 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "Na House"
 include(":app")
+include(":core")
+include(":feature-home")
  
