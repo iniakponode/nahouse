@@ -49,6 +49,7 @@ dependencies {
     implementation(project(":feature-home"))
     implementation(project(":core"))
 
+//    implementation(libs.accompanist.pager.indicators)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
